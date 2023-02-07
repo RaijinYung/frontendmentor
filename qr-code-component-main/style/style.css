@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root {
+    --color0: #F0F1F1;
+    --color1: #DCE8F2;
+    --color2: #D5E1EF;
+    --color3: #77B8CA;
+    --color4: #2B7DFA;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color2);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    background-color: white;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    height: ;
+}
+
+.container {    
+    text-align: center;    
+}
+
+.card img {
+    
+    max-width: 100%;
+    margin: auto;
+    margin-top: -5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+.text p {
+    font-size: 15px;
+    padding-bottom: 15px;
+    max-width: 290px;
+}
+
