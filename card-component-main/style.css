@@ -23,8 +23,8 @@ body {
     position: relative;
 }
 
-#conteudo {
-    width: 280px;
+#container {
+    max-width: 280px;
     background-color: var(--color-card);
     padding: 30px;
     position: absolute;
@@ -37,18 +37,42 @@ body {
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.459);   
 }
 
-#img {
-    height: 30vh;
-    width: 30vw;
-    object-fit: cover;   
-    border: 1px solid black;
-    border-radius: 10px;
+#conteudo {
+    margin-left: -12px;
 }
 
-.text {
-    font-size: 18px;
-    font-weight: 500;
+.img-container {
+    position: relative;
+    display: inline-block;
+    max-height: 300px;
+    max-width: 300px;
+    /* object-fit: cover;    */
+    border: 1px solid black;
+    border-radius: 10px;
+    /* background-color: var(--color02); */
 }
+
+.img-container img {
+    width: 100%;
+    transition: all linear 0.7s;
+}
+
+img.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: var(--color02);
+}
+
+.img-container:hover img {
+    opacity: 0.8;
+}
+
+.img-container:hover img.hover-img {
+    opacity: 1;
+}
+
 
 .text > h1 {
     max-width: 400px;
@@ -56,6 +80,10 @@ body {
     font-size: 22px;
     font-weight: 500;
     color: white;
+}
+
+.text > h1:hover {
+    color: var(--color02);
 }
 
 .text > .p1 {
@@ -99,6 +127,10 @@ div.p2 > p > img {
     text-decoration: none;
     color: white;
     font-weight: 300;
+}
+
+#autor a:hover{
+    color: var(--color02);
 }
 #autor img {
     height: 3.2vh;
