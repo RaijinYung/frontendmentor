@@ -17,7 +17,7 @@ body{
     font-family: "Inter", sans-serif;
 }
 .social__links_profile__text__title1{
-    color: white;
+    color: rgba(255, 255, 255, 0.863);
     font-weight: 700;
 }
 .social__links_profile__text__title2{
